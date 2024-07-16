@@ -1,0 +1,68 @@
+import { PROJECTS } from "../constants";
+import { motion } from "framer-motion";
+import { FaGithub, FaExternalLinkAlt, FaVideo } from "react-icons/fa";
+
+const Projects = () => {
+  return (
+    <div className="border-b border-gray-200 dark:border-neutral-900 pb-4 bg-neutral-100 dark:bg-neutral-950">
+      <motion.h2
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 0.5 }}
+        className="my-20 text-center text-4xl text-neutral-900 dark:text-neutral-300"
+      >
+        Projects
+      </motion.h2>
+      <div>
+        {PROJECTS.map((project, index) => (
+          <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -100 }}
+              transition={{ duration: 1 }}
+              className="w-full lg:w-1/4"
+            >
+              <img
+                src={project.image}
+                width={150}
+                height={150}
+                alt={project.title}
+                className="mb-6 rounded"
+              />
+            </motion.div>
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: 100 }}
+              transition={{ duration: 1 }}
+              className="w-full max-w-xl lg:w-3/4"
+            >
+              <div className="flex items-center mb-2">
+                <h6 className="font-semibold text-neutral-900 dark:text-neutral-300">{project.title}</h6>
+                <a href={project.github} className="ml-4">
+                  <FaGithub className="text-neutral-700 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white" />
+                </a>
+                <a href={project.live} className="ml-4">
+                  <FaExternalLinkAlt className="text-neutral-700 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white" />
+                </a>
+                <a href={project.video} className="ml-4">
+                  <FaVideo className="text-neutral-700 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white" />
+                </a>
+              </div>
+              <p className="mb-4 text-gray-700 dark:text-neutral-400">{project.description}</p>
+              {project.technologies.map((tech, index) => (
+                <span
+                  key={index}
+                  className="mr-2 rounded bg-neutral-200 dark:bg-neutral-900 px-2 py-1 text-sm font-medium text-gray-700 dark:text-purple-900"
+                >
+                  {tech}
+                </span>
+              ))}
+            </motion.div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Projects;
