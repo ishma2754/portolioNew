@@ -49,7 +49,7 @@ const Hero = () => {
               className="mt-8 sm:mb-10"
             >
               <a
-                href="src/assets/RESUME.pdf"
+                href="https://github.com/ishma2754/Resume/blob/main/Ishma%20Khan%20Resume.pdf"
                 download="Ishma_Khan_Resume"
                 className="flex items-center justify-center p-2 rounded-md text-xs font-medium transition-all
                  bg-gray-200 text-gray-900 hover:bg-gray-300 dark:bg-gradient-to-r dark:from-purple-500 dark:via-pink-500 dark:to-red-500 dark:text-white dark:hover:bg-gradient-to-l"
