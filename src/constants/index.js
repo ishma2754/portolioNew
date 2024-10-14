@@ -1,39 +1,59 @@
-import project1 from "../assets/projects/graph.jpeg";
-import project2 from "../assets/projects/homefit.jpg";
-import project3 from "../assets/projects/speech1.png";
-
+import project1 from "../assets/projects/parkease.png";
+import project2 from "../assets/projects/streamify.png";
+import project3 from "../assets/projects/cartify.png";
 
 export const HERO_CONTENT = `Hi, I'm Ishma Khan, detail-oriented Software Developer dedicated to building meaningful solutions that impact people's lives while prioritizing business needs.`;
 
-
 export const PROJECTS = [
   {
-    title: "VitalOrgans-Emergency Response",
+    title: "ParkEase Parking Application",
     image: project1,
-    github: "https://github.com/ishma2754/vitalorgans-app",
-    live: "https://vitalorgansapp.com",
-    video: "https://www.loom.com/share/be72fb0e8be14ad8a7bc572997f3ae36?sid=702b7e4f-fe30-4a06-aa40-9c96d9e183bc",
+    github: "https://github.com/ishma2754/ParkEase",
+    live: "https://parkease-parking.netlify.app/",
     description:
-      "VitalOrgans aims to enhance emergency response by providing hospitals access to patient's medical history via patient's registered email. It works as a tool for patient to manage their medical reports, medical details and their personal information.",
-    technologies: ["React", "Node.js", "Express.js", "PostgreSQL", "Tailwind CSS", "AWS S3"],
+      "ParkEase simplifies the process of booking parking slots in busy cities, allowing individuals to reserve their spots effortlessly.",
+    technologies: [
+      "React",
+      "Redux Toolkit",
+      "CreateAsync Thunk",
+      "Google Map API",
+      "Mock API",
+      "Miragejs",
+      "Tailwind CSS",
+    ],
   },
   {
-    title: "HomeFit",
+    title: "Streamify",
     image: project2,
-    github: "https://github.com/ishma2754/homefit-website-main",
-    live: "https://homefitnesshub.netlify.app",
+    github: "https://github.com/ishma2754/Streamify",
+    live: "https://streamify-analytics-dashboard.netlify.app",
     description:
-      "HOMEFIT is an e-commerce platform dedicated to providing top-quality home fitness equipment. App features a wide range of products, from treadmills to yoga mats, ensuring users can easily find the right gear for their home workouts.",
-    technologies: ["Vanilla JavaScript", "HTML", "CSS"],
+      " A responsive analytics dashboard for Streamify, a fictional music streaming service, showcasing key metrics    and data visualizations for user activity, revenue, and content performance.",
+    technologies: [
+      "React",
+      "Redux Toolkit",
+      "CreateAsync Thunk",
+      "Recharts",
+      "Mock API",
+      "React Toastify ",
+      "Tailwind CSS",
+    ],
   },
   {
-    title: "PharmaKeeper-MedicineKit",
+    title: "Cartify",
     image: project3,
-    github: "https://github.com/ishma2754/PharmaKeeper-MedicineKitApp",
-    live: "https://pharmakeepermedicinekit.netlify.app",
+    github: "https://github.com/ishma2754/Cartify",
+    live: "https://cartify-ecomm.netlify.app/",
     description:
-      "Personal Medicine Manager that tracks every medicine, its brand name, expiry date, quantity, and description with ease. It keeps users' health in check by staying organized and informed about their medications at all times.",
-    technologies: ["Vanilla JavaScript", "HTML", "CSS"],
+      "An e-commerce platform incorporating key features such as product listings, advanced filters, pagination using Custom Hooks and shopping cart functionality.",
+    technologies: [
+      "React",
+      "Redux Toolkit",
+      "React Toastify",
+      "Router 6",
+      "Loader",
+      "Tailwind CSS",
+    ],
   },
 ];
 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaMoon, FaSun } from "react-icons/fa"; // Importing the icons
+import { FaMoon, FaSun } from "react-icons/fa";
 
 const ThemeToggle = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");

@@ -1,6 +1,6 @@
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
-import { FaGithub, FaExternalLinkAlt, FaVideo } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt} from "react-icons/fa";
 
 const Projects = () => {
   return (
@@ -44,9 +44,7 @@ const Projects = () => {
                 <a href={project.live} className="ml-4">
                   <FaExternalLinkAlt className="text-neutral-700 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white" />
                 </a>
-                <a href={project.video} className="ml-4">
-                  <FaVideo className="text-neutral-700 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white" />
-                </a>
+               
               </div>
               <p className="mb-4 text-gray-700 dark:text-neutral-400">{project.description}</p>
               {project.technologies.map((tech, index) => (
